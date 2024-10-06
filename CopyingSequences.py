@@ -69,6 +69,32 @@ print(f'm2: {m2}')
 print(f'm3: {m3}')
 
 print('========== DEEP COPY =========')
+from copy import deepcopy
+m1 = [[1,0,0],[0,1,0],[0,0,1]]
+m2 = deepcopy(m1)
+print(f'm1: {m1}')
+print(f'm2: {m2}')
+print(f'm1 is m2: {m1 is m2}')
+print(f'm1[0]: {m1[0]}')
+print(f'm2[0]: {m2[0]}')
+print(f'm1[0] is m2[0]: {m1[0] is m2[0]}')
+
+m2[0].append(10)
+print('m2[0].append(10)')
+print(f'm1: {m1}')
+print(f'm2: {m2}')
+
+a = (1,2,3)
+b = a[:]
+print(f'a = {a}')
+print(f'b = {b}')
+print(f"a is b: {a is b}")
+
+
+
+
+
+
 
 
 
