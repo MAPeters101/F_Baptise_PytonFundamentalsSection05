@@ -63,11 +63,25 @@ for row in range(len(m)):
             m[row][col] = 1
 
 print(m)
-
+print('='*80)
 """
 Exercise 4
 Do the same problem as Exercise 3, but do not mutate m.
 """
+import copy
+m = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+]
+n = copy.deepcopy(m)
+for row in range(len(n)):
+    for col in range(len(n[0])):
+        if row == col:
+            n[row][col] = 1
+
+print(m)
+print(n)
 
 
 
