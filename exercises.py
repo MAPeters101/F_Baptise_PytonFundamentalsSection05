@@ -9,9 +9,11 @@ of s respectively, in the correct alphabetical order, i.e:
 'ABCDEF'
 'abcdef'
 """
-
-
-
+s = 'FfEeDdCcBbAa'
+lower = ''.join(sorted([char for char in s if char.islower()]))
+upper = ''.join(sorted([char for char in s if char.isupper()]))
+print(lower)
+print(upper)
 
 
 """
