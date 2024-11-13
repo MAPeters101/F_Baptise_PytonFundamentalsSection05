@@ -52,7 +52,17 @@ Make this matrix into an identity matrix (setting the diagonal elements to 1).
 
 Your code should mutate m.
 """
+m = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+]
+for row in range(len(m)):
+    for col in range(len(m[0])):
+        if row == col:
+            m[row][col] = 1
 
+print(m)
 
 """
 Exercise 4
